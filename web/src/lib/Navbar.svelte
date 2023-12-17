@@ -23,8 +23,8 @@
     },
   ];
   
-  export let logos = logo.map(icon);
-  export let homes = home.map(icon);
+  export let logos: CustomIcon[] = logo.map(icon);
+  export let homes: CustomIcon[] = home.map(icon);
 
   $: darkmode();
 </script>

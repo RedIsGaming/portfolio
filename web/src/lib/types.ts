@@ -13,3 +13,9 @@ export type FooterInfo = {
   name: string,
   content: string,
 }
+
+export type RedIsGaming = {
+  name: string,
+  src?: string,
+  description: string[],
+}

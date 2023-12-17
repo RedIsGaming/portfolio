@@ -1,11 +1,13 @@
 <script lang="ts">
   import type { FooterInfo } from "./types";
 
+  export let redisgaming: string = "";
+
   const footerInfo: FooterInfo[] = [
     {
       copyright: "Copyright ©",
       year: new Date().getFullYear(),
-      name: "RedIsGaming",
+      name: redisgaming,
       content: "All Rights Reserved",
     }
   ];
