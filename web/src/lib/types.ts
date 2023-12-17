@@ -5,5 +5,4 @@ export type CustomIcon = {
   href?: string,
   src: IconSource | string,
   size?: number,
-  solid?: boolean,
 };
