@@ -1,4 +1,5 @@
 import "./tailwind.css";
+import "./custom.pcss";
 import App from "./App.svelte";
 
 const app: App = new App({

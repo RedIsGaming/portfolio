@@ -6,3 +6,10 @@ export type CustomIcon = {
   src: IconSource | string,
   size?: number,
 };
+
+export type FooterInfo = {
+  copyright: string,
+  year: number,
+  name: string,
+  content: string,
+}

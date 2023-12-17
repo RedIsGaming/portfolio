@@ -36,7 +36,7 @@
       <div>
         <a href="{icon.href}" class="flex items-center">
           <Icon src="{icon.src}" size="{icon.size?.toString()}" solid />
-          <p class="ml-2">RedIsGaming</p>
+          <p class="ml-2 text-base sm:text-2xl">RedIsGaming</p>
         </a>
       </div>
       {/each}
