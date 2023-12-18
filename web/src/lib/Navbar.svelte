@@ -29,7 +29,7 @@
   $: darkmode();
 </script>
 
-<header class="w-full h-24 bg-white dark:bg-black shadow-lg fixed">
+<header class="w-full h-24 bg-white dark:bg-black shadow-lg">
   <nav class="h-full">
     <article class="h-full mx-3 text-black dark:text-white flex justify-between items-center lg:mx-24">
       {#each logos as icon}

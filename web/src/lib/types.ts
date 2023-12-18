@@ -12,10 +12,16 @@ export type FooterInfo = {
   year: number,
   name: string,
   content: string,
-}
+};
 
 export type RedIsGaming = {
   name: string,
   src?: string,
   description: string[],
-}
+};
+
+export type Technologies = {
+  name: string,
+  src: string,
+  url: string,
+};
