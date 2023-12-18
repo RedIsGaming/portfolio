@@ -25,3 +25,9 @@ export type Technologies = {
   src: string,
   url: string,
 };
+
+export type ContactInfo = {
+  description: string[],
+  platform: string,
+  url: string,
+};

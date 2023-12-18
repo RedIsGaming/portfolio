@@ -25,12 +25,10 @@
 </script>
 
 <section class="bg-gray w-full flex justify-center text-black dark:bg-dark dark:text-white">
-  <article class="my-6 mx-3 lg:mx-0 text-base sm:text-lg" style="width: 1024px;">
+  <article class="my-6 sm:my-12 mx-3 lg:mx-0 text-base sm:text-lg" style="width: 1024px;">
     {#each redIsGaming as me}
       <h1 class="text-5xl sm:text-6xl">{me.name}</h1>
-      <a href="/" target="_self" class="w-32">
-        <img src="{me.src}" alt="{me.name}" class="border-2 rounded-full w-32 mt-5" style="border-color: #0561D1;" />
-      </a>
+      <img src="{me.src}" alt="{me.name}" class="border-2 rounded-full w-32 mt-5" style="border-color: #0561D1;" />
       <p class="mt-5">{me.description}</p>
     {/each}
   </article>
