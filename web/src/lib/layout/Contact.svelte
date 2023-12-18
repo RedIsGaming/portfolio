@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ContactInfo } from "./types";
+  import type { ContactInfo } from "../types";
   
   export let github: string = "";
   export let discord: string = "";

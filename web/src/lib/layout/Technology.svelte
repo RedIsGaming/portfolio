@@ -1,25 +1,25 @@
 <script lang="ts">
-  import type { Technologies } from "./types";
+  import type { Technologies } from "../types";
 
   const backend: Technologies[] = [
     {
       name: "Rust",
-      src: "/src/assets/rust.svg",
+      src: "/src/assets/technologies/rust.svg",
       url: "https://www.rust-lang.org/",
     },
     {
       name: "C#",
-      src: "/src/assets/csharp.svg",
+      src: "/src/assets/technologies/csharp.svg",
       url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
     },
     {
       name: "PHP",
-      src: "/src/assets/php.svg",
+      src: "/src/assets/technologies/php.svg",
       url: "https://www.php.net/",
     },
     {
       name: "TypeScript",
-      src: "/src/assets/typescript.svg",
+      src: "/src/assets/technologies/typescript.svg",
       url: "https://www.typescriptlang.org/",
     },
   ];
@@ -27,22 +27,22 @@
   const frontend: Technologies[] = [
     {
       name: "Svelte",
-      src: "/src/assets/svelte.svg",
+      src: "/src/assets/technologies/svelte.svg",
       url: "https://svelte.dev/",
     },
     {
       name: "Tailwindcss",
-      src: "/src/assets/tailwindcss.svg",
+      src: "/src/assets/technologies/tailwindcss.svg",
       url: "https://tailwindcss.com/",
     },
     {
       name: "TypeScript",
-      src: "/src/assets/typescript.svg",
+      src: "/src/assets/technologies/typescript.svg",
       url: "https://www.typescriptlang.org/",
     },
     {
       name: "JavaScript",
-      src: "/src/assets/javascript.svg",
+      src: "/src/assets/technologies/javascript.svg",
       url: "https://www.javascript.com/",
     },
   ];

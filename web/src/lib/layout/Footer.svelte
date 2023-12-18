@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { FooterInfo } from "./types";
+  import type { FooterInfo } from "../types";
 
   export let redisgaming: string = "";
 

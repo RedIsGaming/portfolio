@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { RedIsGaming } from "./types";
+  import type { RedIsGaming } from "../types";
 
   export let redisgaming: string = "";
 
