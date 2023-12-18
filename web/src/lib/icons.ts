@@ -23,4 +23,4 @@ const social: Icon[] = [
 
 export let logos: Icon[] = logo.map(icons);
 export let homes: Icon[] = home.map(icons);
-export let socials: Icon[] = social.map(icons);
+export let socials: Icon[] = social;

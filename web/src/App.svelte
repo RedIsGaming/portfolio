@@ -4,16 +4,12 @@
   import RedIsGaming from "./lib/layout/RedIsGaming.svelte";
   import Technology from "./lib/layout/Technology.svelte";
   import Contact from "./lib/layout/Contact.svelte";
-
-  export let reddy: string = "RedIsGaming";
-  export let git: string = "Github";
-  export let bonfire: string = "Discord";
 </script>
 
 <Navbar />
-<main>
-  <RedIsGaming redisgaming="{reddy}" />
+<main class="top-24 relative">
+  <RedIsGaming />
   <Technology />
-  <Contact github="{git}" discord="{bonfire}"  />
+  <Contact />
 </main>
-<Footer redisgaming="{reddy}" />
+<Footer />

@@ -1,14 +1,13 @@
 <script lang="ts">
   import type { RedIsGaming } from "../types";
-
-  export let redisgaming: string = "";
+  import { redisgaming, github, discord, reddy } from "../socials";
 
   const redIsGaming: RedIsGaming[] = [
     {
       name: redisgaming,
       src: `/src/assets/${redisgaming}.svg`,
       description: [
-        `Welcome my friend! I'm ${redisgaming} and I'm a developer from the Netherlands. Feel free to call me Reddy as well. 
+        `Welcome my friend! I'm ${redisgaming} and I'm a developer from the Netherlands. Feel free to call me ${reddy} as well. 
         I actually am a backend preffered developer, but I don't mind doing frontend as well. Based on the planet earth, you 
         can check more about me on this website. It's a work in progress, but it will be done soon!`,
       ],
@@ -16,8 +15,8 @@
     {
       name: "",
       description: [
-        `Feel free to check my GitHub and Discord as well. This website as portfolio is also linked on my GitHub. You can 
-        contact me via Discord. I'm always open for a conversation about literally everything. This project is made in Svelte 
+        `Feel free to check my ${github} and ${discord} as well. This website as portfolio is also linked on my ${github}. You can 
+        contact me via ${discord}. I'm always open for a conversation about literally everything. This project is made in Svelte 
         with Typescript and TailwindCSS. Build with Yarn and Vite.`,
       ],
     },

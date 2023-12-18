@@ -4,14 +4,14 @@
   import { reddy } from "../socials";
 </script>
 
-<header class="w-full h-24 bg-white dark:bg-black shadow-lg">
+<header class="w-full h-24 bg-white dark:bg-black shadow-lg fixed z-10 border-b-2" style="border-color: #0561D1;">
   <nav class="h-full">
     <article class="h-full mx-3 text-black dark:text-white flex justify-between items-center lg:mx-24">
       {#each logos as icon}
         <div>
           <a href="{icon.href}" class="flex items-center">
             <Icon src="{icon.src}" size="{icon.size?.toString()}" solid />
-            <p class="ml-2 text-base sm:text-2xl">{reddy}</p>
+            <p class="ml-2 text-2xl">{reddy}</p>
           </a>
         </div>
       {/each}

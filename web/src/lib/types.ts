@@ -7,7 +7,7 @@ export type Icon = {
   size?: number,
 };
 
-export type FooterInfo = {
+export type Footer = {
   copyright: string,
   year: number,
   name: string,
@@ -26,7 +26,7 @@ export type Technologies = {
   url: string,
 };
 
-export type ContactInfo = {
+export type Contact = {
   description: string[],
   platform: string,
   url: string,
