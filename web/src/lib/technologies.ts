@@ -1,24 +1,31 @@
 import type { Technologies } from "./types";
+import Rust from "../assets/technologies/rust.svg";
+import CSharp from "../assets/technologies/csharp.svg";
+import PHP from "../assets/technologies/php.svg";
+import TypeScript from "../assets/technologies/typescript.svg";
+import Svelte from "../assets/technologies/svelte.svg";
+import Tailwindcss from "../assets/technologies/tailwindcss.svg";
+import JavaScript from "../assets/technologies/javascript.svg";
 
 const backend: Technologies[] = [
   {
     name: "Rust",
-    src: "/src/assets/technologies/rust.svg",
+    src: Rust,
     url: "https://www.rust-lang.org/",
   },
   {
     name: "C#",
-    src: "/src/assets/technologies/csharp.svg",
+    src: CSharp,
     url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
   },
   {
     name: "PHP",
-    src: "/src/assets/technologies/php.svg",
+    src: PHP,
     url: "https://www.php.net/",
   },
   {
     name: "TypeScript",
-    src: "/src/assets/technologies/typescript.svg",
+    src: TypeScript,
     url: "https://www.typescriptlang.org/",
   },
 ];
@@ -26,22 +33,22 @@ const backend: Technologies[] = [
 const frontend: Technologies[] = [
   {
     name: "Svelte",
-    src: "/src/assets/technologies/svelte.svg",
+    src: Svelte,
     url: "https://svelte.dev/",
   },
   {
     name: "Tailwindcss",
-    src: "/src/assets/technologies/tailwindcss.svg",
+    src: Tailwindcss,
     url: "https://tailwindcss.com/",
   },
   {
     name: "TypeScript",
-    src: "/src/assets/technologies/typescript.svg",
+    src: TypeScript,
     url: "https://www.typescriptlang.org/",
   },
   {
     name: "JavaScript",
-    src: "/src/assets/technologies/javascript.svg",
+    src: JavaScript,
     url: "https://www.javascript.com/",
   },
 ];
