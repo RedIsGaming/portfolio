@@ -10,7 +10,7 @@
       description: [
         `Welcome my friend! I'm ${redisgaming} and I'm a developer from the Netherlands. Feel free to call me ${reddy} as well. 
         I actually am a backend preffered developer, but I don't mind doing frontend as well. Based on the planet earth, you 
-        can check more about me on this website. It's a work in progress, but it will be done soon!`,
+        can check more about me on this website.`,
       ],
     },
     {
