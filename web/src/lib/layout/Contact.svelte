@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Contact } from "../types";
-  import { github, discord, redisgaming } from "../socials";
+  import { github, discord } from "../socials";
   import { socials } from "../icons";
 
   const contact: Contact[] = [
