@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { RedIsGaming } from "../types";
   import { redisgaming, github, discord, reddy } from "../socials";
-  import Redisgaming from "../assets/RedIsGaming.svg";
+  import Redisgaming from "/src/assets/RedIsGaming.svg";
 
   const redIsGaming: RedIsGaming[] = [
     {
