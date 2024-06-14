@@ -1,9 +1,10 @@
 <script lang="ts">
-  import type { RedIsGaming } from "../types";
+  import type { RedIsGaming } from "../redisgaming";
   import { redisgaming, github, discord, reddy } from "../socials";
   import Redisgaming from "/src/assets/RedIsGaming.svg";
+  import Reddy from "../redisgaming";
 
-  const redIsGaming: RedIsGaming[] = [
+  const intro_into: RedIsGaming[] = Reddy.new([
     {
       name: redisgaming,
       src: Redisgaming,
@@ -21,14 +22,16 @@
         with Typescript and TailwindCSS. Build with Yarn and Vite.`,
       ],
     },
-  ];
+  ]);
+
+  const redisgamings: RedIsGaming[] = [...intro_into];
 </script>
 
 <section class="portfolio custom-portfolio-section">
   <article class="portfolio-article text-base sm:text-xl">
-    {#each redIsGaming as me}
+    {#each redisgamings as me}
       <h1 class="portfolio-h1">{me.name}</h1>
-      <img src="{me.src}" alt="{me.name}" class="border-2 rounded-full w-32 mt-5" style="border-color: #0561D1;" />
+      <img src="{me.src}" alt="{me.name}" class="portfolio-redisgaming-img" />
       <p class="mt-5">{me.description}</p>
     {/each}
   </article>

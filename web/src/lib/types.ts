@@ -6,9 +6,3 @@ export type Icon = {
   src: IconSource | string,
   size?: number,
 };
-
-export type RedIsGaming = {
-  name: string,
-  src?: string,
-  description: string[],
-};

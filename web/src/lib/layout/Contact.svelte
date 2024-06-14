@@ -20,7 +20,7 @@
     <h2 class="portfolio-h2">{cont}</h2>
 
     {#each contacts as conts}
-      <p class="my-5 sm:text-xl text-base">{conts.description}</p>
+      <p class="p-bigger">{conts.description}</p>
     {/each}
     
     <article class="flex">

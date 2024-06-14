@@ -5,7 +5,12 @@
   import TypeScript from "../../assets/technologies/typescript.svg";
   import Svelte from "../../assets/technologies/svelte.svg";
   import Tailwindcss from "../../assets/technologies/tailwindcss.svg";
+
   import JavaScript from "../../assets/technologies/javascript.svg";
+  import C from "../../assets/technologies/c.svg";
+  import Python from "../../assets/technologies/python.svg";
+  import HTML from "../../assets/technologies/html5.svg";
+  import CSS from "../../assets/technologies/css3.svg";
 
   import type { Technology } from "../technology";
   import Technologies from "../technology";
@@ -16,16 +21,24 @@
       src: Rust,
     },
     {
+      name: "TypeScript",
+      src: TypeScript,
+    },
+    {
       name: "C#",
       src: CSharp,
+    },
+    {
+      name: "C",
+      src: C,
     },
     {
       name: "PHP",
       src: PHP,
     },
     {
-      name: "TypeScript",
-      src: TypeScript,
+      name: "Python",
+      src: Python,
     },
   ]);
 
@@ -46,6 +59,14 @@
       name: "JavaScript",
       src: JavaScript,
     },
+    {
+      name: "HTML",
+      src: HTML,
+    },
+    {
+      name: "CSS",
+      src: CSS,
+    },
   ]);
 
   let technologies: Technology[] = [...backend, ...frontend];
@@ -58,15 +79,19 @@
 
     <article class="portfolio-technology-article"> 
       {#each technologies as techs}
-        <div class="portfolio-technology-div">
-          {#if techs.name.startsWith("Rust")}
-            <img class="rust-invert" src="{techs.src}" alt="{techs.name}" width={64} />
-            
-            {:else if techs.name.endsWith("Script")}
-              <img class="rounded-full" src="{techs.src}" alt="{techs.name}" width={64} />
-            {:else}
-              <img src="{techs.src}" alt="{techs.name}" width={64} />
-          {/if}
+        <div class="w-full flex justify-center">
+          <div class="portfolio-technology-div">
+            {#if techs.name.startsWith("Rust")}
+              <img class="rust-invert w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
+              
+              {:else if techs.name.endsWith("Script")}
+                <img class="rounded-full w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
+              {:else if techs.name.startsWith("Python")}
+                <img class="w-{20 * 2} md:w-{28 * 2}" src="{techs.src}" alt="{techs.name}" />
+              {:else}
+                <img class="w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
+            {/if}
+          </div>
         </div>
       {/each}
     </article>
