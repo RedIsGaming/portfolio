@@ -13,7 +13,7 @@ const home: Icon[] = [{ name: "home", src: Home }];
 const social: Icon[] = [
   {
     name: github,
-    href: `https://${github.toLowerCase()}.com/RedIsGaming/portfolio`,
+    href: `https://${github.toLowerCase()}.com/RedIsGaming`,
     src: Github,
   },
   {
