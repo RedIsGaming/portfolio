@@ -1,18 +1,72 @@
 <script lang="ts">
-  import { techs } from "../technologies";
+  import Rust from "../../assets/technologies/rust.svg";
+  import CSharp from "../../assets/technologies/csharp.svg";
+  import PHP from "../../assets/technologies/php.svg";
+  import TypeScript from "../../assets/technologies/typescript.svg";
+  import Svelte from "../../assets/technologies/svelte.svg";
+  import Tailwindcss from "../../assets/technologies/tailwindcss.svg";
+  import JavaScript from "../../assets/technologies/javascript.svg";
+
+  import type { Technology } from "../technology";
+  import Technologies from "../technology";
+
+  const backend: Technology[] = Technologies.new([
+    {
+      name: "Rust",
+      src: Rust,
+    },
+    {
+      name: "C#",
+      src: CSharp,
+    },
+    {
+      name: "PHP",
+      src: PHP,
+    },
+    {
+      name: "TypeScript",
+      src: TypeScript,
+    },
+  ]);
+
+  const frontend: Technology[] = Technologies.new([
+    {
+      name: "Svelte",
+      src: Svelte,
+    },
+    {
+      name: "Tailwindcss",
+      src: Tailwindcss,
+    },
+    {
+      name: "TypeScript",
+      src: TypeScript,
+    },
+    {
+      name: "JavaScript",
+      src: JavaScript,
+    },
+  ]);
+
+  let technologies: Technology[] = [...backend, ...frontend];
+  let tech: string = "Technologies";
 </script>
 
-<section class="w-full bg-white dark:bg-black flex justify-center">
-  <article class="my-6 sm:my-12 mx-3 lg:mx-0" style="width: 1024px;">
-    <h2 class="text-4xl sm:text-5xl text-black dark:text-white">Technologies</h2>
-    <h3 class="text-3xl sm:text-4xl mt-4 sm:mt-8 text-black dark:text-white">Backend && Frontend</h3>
+<section class="portfolio portfolio-section">
+  <article class="portfolio-article">
+    <h2 class="portfolio-h2">{tech}</h2>
 
-    <article class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-3 md:grid-cols-4"> 
-      {#each techs as tech}
-        <div class="h-64 rounded-2xl flex justify-center items-center border-2 lg:h-60 md:h-48" style="border-color: #1FD15A;">
-          <a href="{tech.url}" target="_blank" class="flex justify-center text-white">
-            <img src="{tech.src}" alt="{tech.name}" class="w-7/12 lg:w-3/4 md:w-8/12" style="border-radius: 48px;" />
-          </a>
+    <article class="portfolio-technology-article"> 
+      {#each technologies as techs}
+        <div class="portfolio-technology-div">
+          {#if techs.name.startsWith("Rust")}
+            <img class="rust-invert" src="{techs.src}" alt="{techs.name}" width={64} />
+            
+            {:else if techs.name.endsWith("Script")}
+              <img class="rounded-full" src="{techs.src}" alt="{techs.name}" width={64} />
+            {:else}
+              <img src="{techs.src}" alt="{techs.name}" width={64} />
+          {/if}
         </div>
       {/each}
     </article>

@@ -1,24 +1,28 @@
 <script lang="ts">
-  import type { Contact } from "../types";
+  import type { Contact } from "../contact";
   import { github, discord } from "../socials";
   import { socials } from "../icons";
+  import Contacts from "../contact";
+  
+  const contact_info: Contact = Contacts.new({
+    description: [
+      `You can get in touch with me on ${discord}. Maybe we will have a great conversation right there. 
+      My projects can be found on my ${github}. Be sure to check it out. I don't use other social media platforms, so you know.`
+    ],
+  });
 
-  const contact: Contact[] = [
-    {
-      description: [
-        `You can get in touch with me on ${discord}. Maybe we will have a great conversation right there. 
-        My projects can be found on my ${github}. Be sure to check it out. I don't use other social media platforms, so you know.`
-      ],
-    },
-  ];
+  const contacts: Contact[] = [contact_info];
+  let cont: string = "Contact";
 </script>
 
-<section class="w-full bg-gray dark:bg-dark text-black dark:text-white flex justify-center">
-  <article class="my-6 sm:my-12 mx-3 lg:mx-0" style="width: 1024px;">
-    <h2 class="text-4xl sm:text-5xl">Contact</h2>
-    {#each contact as contacts}
-      <p class="my-5 sm:text-xl text-lg">{contacts.description}</p>
+<section class="portfolio custom-portfolio-section">
+  <article class="portfolio-article">
+    <h2 class="portfolio-h2">{cont}</h2>
+
+    {#each contacts as conts}
+      <p class="my-5 sm:text-xl text-base">{conts.description}</p>
     {/each}
+    
     <article class="flex">
       {#each socials as icon}
         <div>

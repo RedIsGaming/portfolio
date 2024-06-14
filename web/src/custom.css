@@ -11,3 +11,63 @@ p {
   font-family: "Lucida Console";
   font-weight: 400;
 }
+
+.portfolio {
+  @apply w-full text-black dark:text-white flex justify-center;
+}
+
+.portfolio-section {
+  @apply bg-white dark:bg-black;
+}
+
+.custom-portfolio-section {
+  @apply bg-gray dark:bg-dark;
+}
+
+.portfolio-article {
+  @apply my-6 sm:my-12 mx-3 lg:mx-0 w-[1024px];
+}
+
+.portfolio-h1 {
+  @apply text-5xl sm:text-6xl;
+}
+
+.portfolio-h2 {
+  @apply text-4xl sm:text-5xl;
+}
+
+.portfolio-h3 {
+  @apply text-3xl sm:text-4xl;
+}
+
+.portfolio-project-article {
+  @apply mt-6 border-2 rounded-2xl p-6 border-[#1FD15A];
+}
+
+.portfolio-project-div {
+  @apply flex justify-between;
+}
+
+.portfolio-project-img {
+  @apply pointer-events-none sm:w-12 w-10;
+}
+
+.p {
+  @apply sm:text-base text-sm;
+}
+
+.gray-text {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+.portfolio-technology-article {
+  @apply mt-6 grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 sm:gap-8 md:gap-8 lg:gap-6;
+}
+
+.portfolio-technology-div {
+  @apply rounded-2xl flex justify-center items-center p-2 h-24 border-[#1FD15A] border-2;
+}
+
+.rust-invert {
+  @apply invert-0 dark:invert;
+}
