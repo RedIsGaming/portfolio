@@ -41,7 +41,7 @@ p {
 }
 
 .portfolio-project-article {
-  @apply mt-6 border-2 rounded-2xl p-6 border-[#1FD15A];
+  @apply my-6 rounded-2xl p-6 bg-slate-100 dark:bg-slate-900;
 }
 
 .portfolio-project-div {
@@ -66,7 +66,7 @@ p {
 
 .portfolio-technology-div {
   @apply rounded-2xl flex justify-center items-center p-2 h-28 w-28 sm:h-36 sm:w-36 md:h-48 md:w-48 lg:h-40 lg:w-40 
-  border-[#1FD15A] border-2 scale-100 hover:scale-105 duration-300 ease-out hover:ease-in;
+  scale-100 hover:scale-105 duration-300 ease-out hover:ease-in bg-slate-100 dark:bg-slate-900;
 }
 
 .rust-invert {
@@ -97,6 +97,4 @@ p {
   }
 }
 
-.p-bigger {
-  @apply my-5 sm:text-xl text-base;
-}
+.p-bigger { @apply my-5 sm:text-xl text-base; }

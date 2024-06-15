@@ -24,7 +24,6 @@
   ]);
 
   const abouts: About[] = [...about_info];
-
   let abt: string = "About me";
 </script>
 
@@ -34,7 +33,7 @@
 
     {#each abouts as abts, first}
       {#if first > 0}
-        <img src="{Redisgaming}" alt="{redisgaming}" class="portfolio-redisgaming-img !border-[#1FD15A]" />
+        <img src="{Redisgaming}" alt="{redisgaming}" class="portfolio-redisgaming-img" />
       {/if}
       <p class="p-bigger">{abts.description}</p>
     {/each}

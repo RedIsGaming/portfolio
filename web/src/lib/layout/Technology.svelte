@@ -11,6 +11,7 @@
   import Python from "../../assets/technologies/python.svg";
   import HTML from "../../assets/technologies/html5.svg";
   import CSS from "../../assets/technologies/css3.svg";
+  import MySQL from "../../assets/technologies/mysql.svg";
 
   import type { Technology } from "../technology";
   import Technologies from "../technology";
@@ -21,8 +22,8 @@
       src: Rust,
     },
     {
-      name: "TypeScript",
-      src: TypeScript,
+      name: "MySQL",
+      src: MySQL,
     },
     {
       name: "C#",
@@ -85,8 +86,8 @@
               <img class="rust-invert w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
               
               {:else if techs.name.endsWith("Script")}
-                <img class="rounded-full w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
-              {:else if techs.name.startsWith("Python")}
+                <img class="w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
+              {:else if techs.name.startsWith("Python") || techs.name.startsWith("MySQL")}
                 <img class="w-{20 * 2} md:w-{28 * 2}" src="{techs.src}" alt="{techs.name}" />
               {:else}
                 <img class="w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
