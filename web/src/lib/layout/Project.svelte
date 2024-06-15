@@ -104,7 +104,7 @@
     <article class="portfolio">
       <a 
         href="https://github.com/RedIsGaming" 
-        class="w-full bg-blue-400 h-16 rounded-2xl sm:w-1/2 md:w-2/5 lg:w-1/3 flex justify-center dark:bg-blue-600">
+        class="w-full bg-blue-600 h-16 rounded-2xl sm:w-1/2 md:w-2/5 lg:w-1/3 flex justify-center">
         <button class="text-xl text-white font-semibold">{more}</button>
       </a>
     </article>

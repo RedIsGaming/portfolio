@@ -17,7 +17,7 @@
       {/each}
       {#each homes as icon}
         <div>
-          <a href="{icon.href}" class="hidden sm:inline">
+          <a href="{icon.href}" class="hidden sm:inline" aria-label="Return to RedIsGaming's portfolio">
             <Icon src="{icon.src}" size="{icon.size?.toString()}" solid />
           </a>
         </div>
