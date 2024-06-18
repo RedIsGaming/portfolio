@@ -2,7 +2,7 @@
   import type { About } from "../about";
   import Abouts from "../about";
   import { github, discord, redisgaming } from "../socials";
-  import Redisgaming from "/src/assets/RedIsGaming.svg";
+  import Redisgaming from "/src/assets/RedIsGaming.webp";
 
   const about_info: About[] = Abouts.new([
     {
@@ -24,7 +24,7 @@
   ]);
 
   const abouts: About[] = [...about_info];
-  let abt: string = "About me";
+  const abt: string = "About me";
 </script>
 
 <section class="portfolio custom-portfolio-section">

@@ -12,7 +12,7 @@
   });
 
   const contacts: Contact[] = [contact_info];
-  let cont: string = "Contact";
+  const cont: string = "Contact";
 </script>
 
 <section class="portfolio custom-portfolio-section">
@@ -27,7 +27,7 @@
       {#each socials as icon}
         <div>
           <a href="{icon.href}" target="_blank">
-            <img src="{icon.src}" alt="{icon.name}" class="invert-0 dark:invert w-8 mr-2 sm:w-12 sm:mr-4" />
+            <img src="{icon.src}" alt="{icon.name}" class="mr-2 w-8 sm:mr-4 sm:w-12 invert-0 dark:invert" />
           </a>
         </div>
       {/each}

@@ -3,9 +3,7 @@ export type Contact = {
 };
 
 const Contacts = {
-  new: function(contact: Contact): Contact {
-    return contact;
-  },
+  new: (contact: Contact): Contact => contact,
 };
 
 export default Contacts;

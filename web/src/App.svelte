@@ -9,7 +9,7 @@
 </script>
 
 <Navbar />
-<main class="top-24 relative">
+<main class="relative top-24">
   <RedIsGaming />
   <Technology />
   <About />

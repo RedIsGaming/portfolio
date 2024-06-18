@@ -70,8 +70,8 @@
     },
   ]);
 
-  let technologies: Technology[] = [...backend, ...frontend];
-  let tech: string = "Technologies";
+  const technologies: Technology[] = [...backend, ...frontend];
+  const tech: string = "Technologies";
 </script>
 
 <section class="portfolio portfolio-section">
@@ -80,10 +80,10 @@
 
     <article class="portfolio-technology-article"> 
       {#each technologies as techs}
-        <div class="w-full flex justify-center">
+        <div class="flex justify-center w-full">
           <div class="portfolio-technology-div">
             {#if techs.name.startsWith("Rust")}
-              <img class="rust-invert w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />
+              <img class="w-20 md:w-28 rust-invert" src="{techs.src}" alt="{techs.name}" />
               
               {:else if techs.name.endsWith("Script")}
                 <img class="w-20 md:w-28" src="{techs.src}" alt="{techs.name}" />

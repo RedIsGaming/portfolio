@@ -16,9 +16,7 @@ export type Project = {
 };
 
 const Projects = {
-  new: function(project: Project): Project {
-    return project;
-  },
+  new: (project: Project): Project => project,
 };
 
 export default Projects;

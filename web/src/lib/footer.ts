@@ -6,9 +6,7 @@ export type Footer = {
 };
 
 const Footers = {
-  new: function(footer: Footer): Footer {
-    return footer;
-  }
-}
+  new: (footer: Footer): Footer => footer,
+};
 
 export default Footers;

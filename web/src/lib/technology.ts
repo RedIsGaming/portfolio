@@ -4,9 +4,7 @@ export type Technology = {
 };
 
 const Technologies = {
-  new: function(technology: Technology[]): Technology[] {
-    return technology;
-  }
+  new: (technology: Technology[]): Technology[] => technology,
 };
 
 export default Technologies;

@@ -57,8 +57,8 @@
   });
 
   const projects: Project[] = [rust_colors, rlsyscli, portfolio];
-  let proj: string = "Projects";
-  let more: string = "You can view more on Github";
+  const proj: string = "Projects";
+  const more: string = "You can view more on Github";
 </script>
 
 <section class="portfolio portfolio-section">
@@ -86,11 +86,11 @@
             {/if}
           </div>
 
-          <p class="gray-text p my-2">{projs.description}</p>
+          <p class="my-2 gray-text p">{projs.description}</p>
           <p class="inline-block mt-2 mb-8 font-black p">{projs.keywords.join(" ")}</p>
           
           <div class="portfolio-project-div">
-            <div class="portfolio-project-div items-center">
+            <div class="items-center portfolio-project-div">
               <span class="{projs.language.color} w-3 h-3 rounded-full mr-1 sm:w-4 sm:h-4"></span>
               <p class="p">{projs.language.name}</p>
             </div>
@@ -104,8 +104,8 @@
     <article class="portfolio">
       <a 
         href="https://github.com/RedIsGaming" 
-        class="w-full bg-blue-600 h-16 rounded-2xl sm:w-1/2 md:w-2/5 lg:w-1/3 flex justify-center">
-        <button class="text-xl text-white font-semibold">{more}</button>
+        class="flex justify-center w-full h-16 bg-blue-600 rounded-2xl sm:w-1/2 md:w-2/5 lg:w-1/3">
+        <button class="text-xl font-semibold text-white">{more}</button>
       </a>
     </article>
   </article>

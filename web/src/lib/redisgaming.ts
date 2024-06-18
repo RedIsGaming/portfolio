@@ -5,9 +5,7 @@ export type RedIsGaming = {
 };
 
 const Reddy = {
-  new: function(redisgaming: RedIsGaming[]): RedIsGaming[] {
-    return redisgaming;
-  }
-}
+  new: (redisgaming: RedIsGaming[]): RedIsGaming[] => redisgaming,
+};
 
 export default Reddy;

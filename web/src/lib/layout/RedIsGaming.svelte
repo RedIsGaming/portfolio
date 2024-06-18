@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { RedIsGaming } from "../redisgaming";
   import { redisgaming, github, discord, reddy } from "../socials";
-  import Redisgaming from "/src/assets/RedIsGaming.svg";
+  import Redisgaming from "/src/assets/RedIsGaming.webp";
   import Reddy from "../redisgaming";
 
   const intro_into: RedIsGaming[] = Reddy.new([
@@ -28,7 +28,7 @@
 </script>
 
 <section class="portfolio custom-portfolio-section">
-  <article class="portfolio-article text-base sm:text-xl">
+  <article class="text-base sm:text-xl portfolio-article">
     {#each redisgamings as me}
       <h1 class="portfolio-h1">{me.name}</h1>
       <img src="{me.src}" alt="{me.name}" class="portfolio-redisgaming-img" />

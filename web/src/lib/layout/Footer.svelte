@@ -14,8 +14,8 @@
 </script>
 
 {#each footers as foot}
-  <footer class="w-full h-12 bg-white dark:bg-black shadow-lg -bottom-24 border-t-2 relative" style="border-color: #0561D1;">
-    <section class="h-full text-black dark:text-white flex justify-center items-center mx-3 sm:mx-0">
+  <footer class="relative -bottom-24 w-full h-12 bg-white border-t-2 shadow-lg dark:bg-black" style="border-color: #0561D1;">
+    <section class="flex justify-center items-center mx-3 h-full text-black sm:mx-0 dark:text-white">
       <p class="text-sm sm:text-base">{foot.copyright} {foot.year} {foot.name}. {foot.content}.</p>
     </section>
   </footer>

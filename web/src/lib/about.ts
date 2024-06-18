@@ -3,9 +3,7 @@ export type About = {
 };
 
 const Abouts = {
-  new: function(about: About[]): About[] {
-    return about;
-  }
-}
+  new: (about: About[]): About[] => about,
+};
 
 export default Abouts;
