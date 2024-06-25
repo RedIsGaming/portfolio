@@ -5,6 +5,23 @@
   import CSharp from "../../assets/technologies/csharp.svg";
   import Svelte from "../../assets/technologies/svelte.svg";
 
+  const r_2fa: Project = Projects.new({ 
+    name: "R-2FA",
+    icon: {
+      src: Rust,
+      alt: "Rust-logo",
+    },
+    description: "This project was build with Tauri in Rust with Rsbuild.",
+    keywords: [],
+    language: {
+      name: "Rust",
+      color: "bg-orange-200",
+    },
+    license: "MIT License",
+    url: "https://github.com/RedIsGaming/R-2FA",
+    target: "_blank",
+  });
+
   const rust_colors: Project = Projects.new({ 
     name: "rust-colors",
     icon: {
@@ -56,7 +73,7 @@
     target: "_self",
   });
 
-  const projects: Project[] = [rust_colors, rlsyscli, portfolio];
+  const projects: Project[] = [r_2fa, rust_colors, rlsyscli, portfolio];
   const proj: string = "Projects";
   const more: string = "You can view more on Github";
 </script>
@@ -103,8 +120,9 @@
     
     <article class="portfolio">
       <a 
-        href="https://github.com/RedIsGaming" 
-        class="flex justify-center w-full h-16 bg-blue-600 rounded-2xl sm:w-1/2 md:w-2/5 lg:w-1/3">
+        href="https://github.com/RedIsGaming?tab=repositories" 
+        class="flex justify-center w-full h-16 bg-blue-600 rounded-2xl sm:w-1/2 md:w-2/5 lg:w-1/3"
+        target="_blank">
         <button class="text-xl font-semibold text-white">{more}</button>
       </a>
     </article>
