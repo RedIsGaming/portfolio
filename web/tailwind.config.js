@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{html,js,rs}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mono: ["Monaco"],
+      },
+    },
   },
   plugins: [],
 }
