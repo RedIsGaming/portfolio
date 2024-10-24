@@ -1,0 +1,19 @@
+[workspace]
+members = ["web"]
+resolver = "2"
+
+[profile.dev]
+debug = true
+codegen-units = 16
+lto = false
+strip = false
+opt-level = 0
+panic = "unwind"
+
+[profile.release]
+debug = false
+codegen-units = 1
+lto = true
+strip = true
+opt-level = "z"
+panic = "abort"
