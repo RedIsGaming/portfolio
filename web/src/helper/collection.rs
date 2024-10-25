@@ -27,10 +27,10 @@ impl CollectionInfo {
                 "contact".to_owned()
             ], 
             description: vec![
-                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product. Do you want to know more about me? You can find it out below.".to_owned(), 
-                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product. Do you want to know more about me? You can find it out below.".to_owned(), 
-                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product. Do you want to know more about me? You can find it out below.".to_owned(), 
-                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product. Do you want to know more about me? You can find it out below.".to_owned()
+                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product.".to_owned(), 
+                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product.".to_owned(), 
+                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product.".to_owned(), 
+                "You can get to know more about me by clicking the button below. I'm Red and I write software. With passion for this and over 4 years, I've gained more experience on the way. With my analytical skills, I solve problems. I create solutions that can fit into any software product.".to_owned()
             ],
             match_exact: true, 
         }
@@ -39,11 +39,12 @@ impl CollectionInfo {
 
 pub fn Collection() -> impl IntoView {
     let collection_info = CollectionInfo::new();
+    let title = "Collections".to_owned().to_uppercase();
 
     view! {
         <section class="bg-white dark:bg-black w-full font-mono text-black dark:text-white flex justify-center
             items-center flex-col py-24 px-3 lg:px-32 text-center">
-            <h2 class="text-5xl sm:text-6xl font-bold pb-6">Collections</h2>
+            <h2 class="text-5xl sm:text-6xl font-bold pb-6">{title}</h2>
             <article class="grid grid-cols md:grid-cols-2 w-full gap-5 content-center">
             {
                 collection_info.d.iter().zip(collection_info.title).zip(collection_info.description).map(|((a, b), c)| {
@@ -51,11 +52,12 @@ pub fn Collection() -> impl IntoView {
 
                     view! {
                         <article class="w-full p-10 bg-slate-100 dark:bg-slate-900 rounded-3xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" class="w-full">
-                                <path fill="white" d=a />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" class="w-full 
+                                fill-current text-black dark:text-white">
+                                <path d=a />
                             </svg>
-                            <h3 class="text-4xl pt-6">{b.to_uppercase()}</h3>
-                            <p class="py-8 text-lg">{c}</p>
+                            <h3 class="text-4xl pt-6 font-semibold">{b.to_uppercase()}</h3>
+                            <p class="py-8 text-lg text-neutral-600 dark:text-neutral-400">{c}</p>
                             <A href=url exact=collection_info.match_exact>
                                 <button class="bg-red-600 w-full h-12 rounded-2xl text-2xl font-semibold text-white scale-100 
                                     hover:scale-105 duration-300 ease-out hover:ease-in">
