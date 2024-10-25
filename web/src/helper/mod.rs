@@ -1,3 +1,3 @@
 pub mod banner;
 pub mod collection;
-pub mod keypoint;
+pub mod socials;

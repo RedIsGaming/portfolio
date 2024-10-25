@@ -9,7 +9,7 @@ use leptos_router::{Router, Routes, Route};
 fn App() -> impl IntoView {
     view! {
         <Router>
-            <header class="sticky w-full top-0">
+            <header class="sticky w-full top-0 z-10">
                 <header::Header />
             </header>
 
@@ -24,9 +24,9 @@ fn App() -> impl IntoView {
                 </Routes>
             </main>
 
-            // <footer>
-            //     <footer::Footer />
-            // </footer>
+            <footer class="pb-12 bg-zinc-50 dark:bg-zinc-950">
+                <footer::Footer />
+            </footer>
         </Router>
     }
 }
