@@ -1,13 +1,17 @@
 #![allow(non_snake_case)]
 #![allow(unused_imports)]
 
-use web::{r#static::{header, footer, unfound}, components::{about, project, stack, contact}, home};
+use leptos_meta::{provide_meta_context, Html};
+use web::{r#static::{header, footer, unfound}, components::{about, project, stack, contact}, home, helper::socials};
 use leptos::{component, mount_to_body, view, IntoView};
 use leptos_router::{Router, Routes, Route};
 
 #[component]
 fn App() -> impl IntoView {
+    provide_meta_context();
+
     view! {
+        <Html lang="en" />
         <Router>
             <header class="sticky w-full top-0 z-10">
                 <header::Header />
@@ -25,6 +29,7 @@ fn App() -> impl IntoView {
             </main>
 
             <footer class="pb-12 bg-zinc-50 dark:bg-zinc-950">
+                <socials::Socials />
                 <footer::Footer />
             </footer>
         </Router>

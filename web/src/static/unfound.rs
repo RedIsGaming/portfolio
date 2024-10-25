@@ -1,6 +1,7 @@
 #![allow(non_snake_case)]
 
 use leptos::{component, view, IntoView};
+use leptos_meta::Title;
 
 #[derive(Debug, Default)]
 struct UnFoundInfo(Vec<String>, Vec<String>);
@@ -23,7 +24,8 @@ pub fn UnFound() -> impl IntoView {
     );
 
     view! {
-        <section class="bg-zinc-50 dark:bg-zinc-950 w-full h-[81vh] font-mono text-black dark:text-white flex justify-center 
+        <Title text="404 Page not found" />
+        <section class="bg-zinc-50 dark:bg-zinc-950 w-full h-[44vh] font-mono text-black dark:text-white flex justify-center 
             items-center flex-col">
             <h1 class="text-6xl sm:text-8xl font-bold w-auto">{UnFoundInfo::title(&unfound_info)}</h1>
             <br/>
