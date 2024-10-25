@@ -9,11 +9,11 @@ use leptos_router::{Router, Routes, Route};
 fn App() -> impl IntoView {
     view! {
         <Router>
-            <header>
+            <header class="sticky w-full top-0">
                 <header::Header />
             </header>
 
-            <main class="bg-white dark:bg-black">
+            <main>
                 <Routes>
                     <Route path="/" view=home::Home />
                     // <Route path="/about" view=about::About />

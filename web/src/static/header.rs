@@ -29,8 +29,8 @@ pub fn Header() -> impl IntoView {
     );
 
     view! {
-        <nav class="bg-white dark:bg-black text-black dark:text-white w-full sm:flex sm:items-center sm:justify-between py-10 
-            px-3 lg:px-16 font-semibold flex-col sm:flex-row fixed relative text-center">
+        <nav class="bg-white dark:bg-black text-black dark:text-white w-full sm:flex sm:items-center sm:justify-between py-5 
+            sm:py-10 px-3 lg:px-32 font-semibold flex-col sm:flex-row text-center">
             <article class="text-6xl font-mono w-full sm:w-auto pb-6 sm:p-0">
                 <A href="/" exact=header_info.match_exact>Red</A>
             </article>
