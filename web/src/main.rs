@@ -1,7 +1,5 @@
-#![allow(non_snake_case)]
-#![allow(unused_imports)]
-
 use leptos_meta::{provide_meta_context, Html};
+#[allow(unused_imports)]
 use web::{r#static::{header, footer, unfound}, components::{about, project, stack, contact}, home, helper::socials};
 use leptos::{component, mount_to_body, view, IntoView};
 use leptos_router::{Router, Routes, Route};
@@ -17,7 +15,7 @@ fn App() -> impl IntoView {
                 <header::Header />
             </header>
 
-            <main>
+            <main class="bg-zinc-50 dark:bg-zinc-950">
                 <Routes>
                     <Route path="/" view=home::Home />
                     // <Route path="/about" view=about::About />
@@ -28,7 +26,7 @@ fn App() -> impl IntoView {
                 </Routes>
             </main>
 
-            <footer class="pb-12 bg-zinc-50 dark:bg-zinc-950">
+            <footer class="pb-8 bg-zinc-50 dark:bg-zinc-950">
                 <socials::Socials />
                 <footer::Footer />
             </footer>

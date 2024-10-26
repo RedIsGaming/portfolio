@@ -1,15 +1,22 @@
-#![allow(non_snake_case)]
+use leptos::{component, view, IntoView};
+use crate::helper::mute_audio::VideoControls;
 
-use leptos::{view, IntoView};
-
+#[component]
 pub fn Banner() -> impl IntoView {
-    let title = "Red".to_owned().to_uppercase();
+    let title = String::from("Red").to_uppercase();
 
     view! {
-        <section class="w-full font-mono text-black dark:text-white flex justify-center items-center flex-col px-24 py-32 
-            bg-zinc-50 dark:bg-zinc-950 text-center">
-            <h1 class="text-8xl sm:text-9xl font-bold w-auto">{title}</h1>
-            <p class="text-2xl text-neutral-600 dark:text-neutral-400">A Software Developer</p>
+        <section class="relative">
+            <VideoControls />
+            <article class="w-full font-mono text-white flex justify-center items-center flex-col py-32 text-center absolute 
+                inset-0">
+                <img src="./assets/Red.webp" class="border-red-600 border-2 rounded-full w-28 sm:w-32 h-28 sm:h-32 flex
+                    justify-center items-center bg-neutral-950" 
+                    alt={title.clone()} 
+                />
+                <h1 class="text-7xl sm:text-8xl md:text-9xl font-bold w-auto pt-4">{title}</h1>
+                <p class="text-2xl text-neutral-400">A Software Developer</p>
+            </article>
         </section>
     }
 }

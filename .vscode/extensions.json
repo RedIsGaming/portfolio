@@ -3,9 +3,9 @@
         "rust-lang.rust-analyzer",
         "tamasfe.even-better-toml",
         "opeolluwa.leptos",
-        "masterustacean.leptos-fmt",
         "fill-labs.dependi",
         "usernamehw.errorlens",
+        "dtsvet.vscode-wasm",
     ],
     "unwantedRecommendations": [
         "rust-lang.rust",

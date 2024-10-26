@@ -2,6 +2,9 @@
 name = "web"
 version = "0.1.0"
 edition = "2021"
+readme = "README.md"
+authors = ["Red"]
+description = "A portfolio website about me"
 
 [dependencies]
 leptos = { version = "0.6.15", features = ["csr"] }
@@ -9,3 +12,14 @@ leptos_router = { version = "0.6.15", features = ["csr"] }
 leptos_meta = { version = "0.6.15", features = ["csr"] }
 iconify = "0.3.1"
 chrono = "0.4.38"
+
+[profile.release]
+debug = false
+codegen-units = 1
+lto = true
+strip = true
+opt-level = "z"
+panic = "abort"
+incremental = false
+overflow-checks = false
+debug-assertions = false

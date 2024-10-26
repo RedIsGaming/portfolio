@@ -1,5 +1,3 @@
-#![allow(non_snake_case)]
-
 use leptos::{component, view, IntoView};
 use chrono::{Datelike, Duration, Utc};
 

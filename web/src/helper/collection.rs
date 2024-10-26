@@ -1,6 +1,4 @@
-#![allow(non_snake_case)]
-
-use leptos::{view, IntoView};
+use leptos::{component, view, IntoView};
 use leptos_router::A;
 
 #[derive(Debug, Default, Clone)]
@@ -21,32 +19,28 @@ impl CollectionInfo {
                 "M2 22a8 8 0 1 1 16 0zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6m10 4h4v2h-4zm-3-5h7v2h-7zm2-5h5v2h-5z".to_owned(),
                 "M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z".to_owned()
             ],
-            title: vec![
-                "about".to_owned(), 
-                "project".to_owned(), 
-                "stack".to_owned(), 
-                "contact".to_owned()
-            ], 
+            title: vec!["about".to_owned(), "project".to_owned(), "stack".to_owned(), "contact".to_owned()], 
             description: vec![
-                "I'm Red and I write software. In the current time, I've gained experience along the way. With my technical and solving skills, I solve problems. I create solutions that can fit into any software product. You can find more about me by clicking the button below.".to_owned(), 
-                "I've done a lot of projects in recent years. From frontend to backend and CLI's, Embedded, ORM's, Webapps, Backend systems and more. I'm passionate to learn more about certain topics. You can find more about my projects by clicking the button below.".to_owned(), 
-                "Different programming languages serve their own purpose(s). With the time being, I've experienced and played with many different languages, tools and frameworks. Like Rust, TS, C# and more. You can find more about my stacks by clicking the button below.".to_owned(), 
-                "There is a lot to tell about this field and much opportunity. I'm always ready to have a future conversation. You can ask me anything by contacting me. About me, to projects, to stack choices or something else. You can reach me out, by clicking the button below.".to_owned()
+                "I'm Red and I write software. In the current time, I've gained experience along the way. With my technical and solving skills, I solve problems. I create solutions that can fit into any software product.".to_owned(), 
+                "I've done a lot of projects in recent years. From frontend to backend and CLI's, Embedded, ORM's, Webapps, Backend systems and more. I'm passionate to learn more about certain topics.".to_owned(), 
+                "Different programming languages serve their own purpose(s). With the time being, I've experienced and played with many different languages, tools and frameworks. Like Rust, TS, C# and more.".to_owned(), 
+                "There is a lot to tell about this field and much opportunity. I'm always ready to have a future conversation. You can ask me anything by contacting me. About me, to projects, to stack choices or something else.".to_owned()
             ],
             match_exact: true, 
         }
     }
 }
 
+#[component]
 pub fn Collection() -> impl IntoView {
     let collection_info = CollectionInfo::new();
-    let title = "Know more".to_owned().to_uppercase();
+    let title = String::from("Know more").to_uppercase();
 
     view! {
         <section class="bg-white dark:bg-black w-full font-mono text-black dark:text-white flex justify-center
-            items-center flex-col py-24 px-3 lg:px-32 text-center">
+            items-center flex-col py-16 px-3 lg:px-32 text-center">
             <h2 class="text-5xl sm:text-6xl font-bold pb-10">{title}</h2>
-            <article class="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-5 content-center">
+            <article class="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-6 content-center">
             {
                 collection_info.d.iter().zip(collection_info.title).zip(collection_info.description).map(|((a, b), c)| {
                     let url = format!("/{}", b);
