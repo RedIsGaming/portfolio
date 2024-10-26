@@ -23,3 +23,6 @@ panic = "abort"
 incremental = false
 overflow-checks = false
 debug-assertions = false
+
+[package.metadata.trunk]
+build-command = "trunk build --release"
