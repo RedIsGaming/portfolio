@@ -21,10 +21,10 @@ impl CollectionInfo {
             ],
             title: vec!["about".to_owned(), "project".to_owned(), "stack".to_owned(), "contact".to_owned()], 
             description: vec![
-                "I'm Red and I write software. In the current time, I've gained experience along the way. With my technical and solving skills, I solve problems. I create solutions that can fit into any software product.".to_owned(), 
+                "I'm Red and I write software. In the current time, I've gained experience along the way. With my technical and solving skills, I solve problems. I create solutions that can fit into any software.".to_owned(), 
                 "I've done a lot of projects in recent years. From frontend to backend and CLI's, Embedded, ORM's, Webapps, Backend systems and more. I'm passionate to learn more about certain topics.".to_owned(), 
                 "Different programming languages serve their own purpose(s). With the time being, I've experienced and played with many different languages, tools and frameworks. Like Rust, TS, C# and more.".to_owned(), 
-                "There is a lot to tell about this field and much opportunity. I'm always ready to have a future conversation. You can ask me anything by contacting me. About me, to projects, to stack choices or something else.".to_owned()
+                "There is a lot to tell about this field and much opportunity. I'm always ready to have a future conversation. You can ask me anything. From projects, to stack choices or something else.".to_owned()
             ],
             match_exact: true, 
         }

@@ -598,10 +598,6 @@ video {
   height: 61vh;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-28 {
   width: 7rem;
 }
@@ -930,6 +926,10 @@ video {
 
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:bg-center {
+    background-position: center;
   }
 
   .sm\:object-center {

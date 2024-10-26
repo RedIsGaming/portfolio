@@ -32,7 +32,7 @@ pub fn Header() -> impl IntoView {
             <article class="text-6xl font-mono w-full sm:w-auto pb-6 sm:p-0">
                 <A href="/" exact=header_info.match_exact>Red</A>
             </article>
-            <article class="text-xl sm:text-2xl font-mono w-24 w-full sm:w-auto text-center">
+            <article class="text-xl sm:text-2xl font-mono w-full sm:w-auto text-center">
             {
                 header_info.url.into_iter().zip(header_info.name).map(|(x, y)| {
                     view! {

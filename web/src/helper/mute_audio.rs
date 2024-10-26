@@ -14,8 +14,8 @@ pub fn VideoControls() -> impl IntoView {
     });
 
     view! {
-        <video autoplay loop playsinline class="bg-cover w-full h-[61vh] bg-center object-cover bg-center sm:object-center 
-            invisible sm:visible" 
+        <video autoplay loop playsinline disablePictureInPicture="true" class="bg-cover w-full h-[61vh] bg-center object-cover 
+            sm:bg-center sm:object-center invisible sm:visible" 
             node_ref={noderef}>
             <source src="./assets/Banner.mp4" type="video/mp4" />
         </video>
