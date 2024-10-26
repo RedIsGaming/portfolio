@@ -1,2 +1,2 @@
-# rust_portfolio
+# portfolio
 My new portfolio shipped in Rust.
