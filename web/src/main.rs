@@ -1,4 +1,4 @@
-use leptos_meta::{provide_meta_context, Html};
+use leptos_meta::{provide_meta_context, Html, Meta};
 #[allow(unused_imports)]
 use web::{r#static::{header, unfound}, components::{about, project, stack, contact}, home, helper::socials};
 use leptos::{component, mount_to_body, view, IntoView};
@@ -10,6 +10,10 @@ fn App() -> impl IntoView {
 
     view! {
         <Html lang="en" />
+        <Meta charset="UTF-8" />
+        <Meta name="author" content="Red" />
+        <Meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <Router>
             <header class="sticky w-full top-0 z-10">
                 <header::Header />
@@ -21,7 +25,7 @@ fn App() -> impl IntoView {
                     // <Route path="/about" view=about::About />
                     // <Route path="/project" view=project::Project />
                     <Route path="/stack" view=stack::Stack />
-                    // <Route path="/contact" view=contact::Contact />
+                    <Route path="/contact" view=contact::Contact />
                     <Route path="*/any" view=unfound::UnFound />
                 </Routes>
             </main>

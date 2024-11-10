@@ -6,14 +6,12 @@ use leptos_meta::{Meta, Title};
 fn HomeSEO() -> impl IntoView {
     view! {
         <Title text="Red Homepage" />
-        <Meta charset="UTF-8" />
-        <Meta content="width=device-width, initial-scale=1" name="viewport" />
-        <Meta content="Red" name="author" />
-        <Meta content="Red, Homepage, Software, Technology, Portfolio" name="keywords" />
         <Meta 
+            name="description"
             content="Red is a passionate software developer with heart for technology and language stacks that follow conventions" 
-            name="description" 
         />
+        <Meta name="keywords" content="Red, Homepage, Software, Developer, Technology, Portfolio, Stacks, Conventions" />
+        <Meta name="robots" content="index, follow" />
     }
 }
 

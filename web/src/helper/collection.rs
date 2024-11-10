@@ -24,7 +24,7 @@ impl CollectionInfo {
                 "I'm Red and I write software. In the current time, I've gained experience along the way. With my technical and solving skills, I solve problems. I create solutions that can fit into any software.".to_owned(), 
                 "I've done a lot of projects in recent years. From frontend to backend and CLI's, Embedded, ORM's, Webapps, Backend systems and more. I'm passionate to learn more about certain topics.".to_owned(), 
                 "Different programming languages serve their own purpose(s). With the time being, I've experienced and played with many different languages, tools and frameworks. Like Rust, TS, C# and more.".to_owned(), 
-                "There is a lot to tell about this field and much opportunity. I'm always ready to have a future conversation. You can ask me anything. From projects, to stack choices or something else.".to_owned()
+                "There is a lot to tell about this field and much opportunity. I'm always ready to have a future conversation. You can ask me anything. From projects, to stack choices or something else that you like.".to_owned()
             ],
             match_exact: true, 
         }
@@ -51,7 +51,7 @@ pub fn Collection() -> impl IntoView {
                                 <path d=a />
                             </svg>
                             <h3 class="heading-third pt-6">{b.to_uppercase()}</h3>
-                            <p class="py-8 text-xl text-neutral-600 dark:text-neutral-400">{c}</p>
+                            <p class="py-8 text-xl text-neutral-600 dark:text-neutral-400 font-mono">{c}</p>
                             <A href=url exact=collection_info.match_exact>
                                 <button class="bg-red-600 w-full h-14 rounded-2xl text-3xl text-white scale-100 
                                     hover:scale-105 duration-300 ease-out hover:ease-in">

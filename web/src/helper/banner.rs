@@ -6,7 +6,7 @@ pub fn Banner() -> impl IntoView {
     let title = String::from("Red").to_uppercase();
 
     view! {
-        <section class="relative">
+        <section class="relative bg-white dark:bg-black">
             <VideoControls />
             <article class="section-nodefault bg-transparent dark:bg-transparent px-0 flex-col items-center absolute inset-0">
                 <img src="./assets/Red.webp" class="border-red-600 border-2 rounded-full w-28 sm:w-32 h-28 sm:h-32 flex

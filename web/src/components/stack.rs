@@ -1,10 +1,16 @@
 use leptos::{component, view, IntoView};
-use leptos_meta::Title;
+use leptos_meta::{Meta, Title};
 
 #[component]
-fn StackSEO(stack: &'static str) -> impl IntoView {
+fn StackSEO() -> impl IntoView {
     view! {
-        <Title text={stack} />
+        <Title text="Red Stack" />
+        <Meta 
+            name="description"
+            content="Red loves to work with different kind of stacks. To check more about Red's stacks, you can check this page." 
+        />
+        <Meta name="keywords" content="Red, Stack, Stacks, Programming Stacks, Technology, Backend, Frontend, Languages" />
+        <Meta name="robots" content="index, follow" />
     }
 }
 
@@ -37,24 +43,22 @@ pub fn Stack() -> impl IntoView {
         "m11.991 24l-6.944-1.928L3 4.717h18L18.954 22.07zM7.047 12.573l.191 2.128h7.377l-.247 2.76l-2.374.642h-.002l-2.37-.64l-.152-1.697H7.333l.298 3.342l4.36 1.21l4.367-1.21l.532-5.964l.052-.571l.384-4.309H6.664l.194 2.129h8.136l-.194 2.18z"
     ];
 
-    let stack = "Stack";
-
     view! {
-        <StackSEO stack={stack} />
+        <StackSEO />
 
         <section class="section-nodefault">
             <article class="w-full">
-                <h1 class="heading-first">{stack.to_uppercase()}</h1>
+                <h1 class="heading-first">{"Stack".to_uppercase()}</h1>
 
                 <article class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 mt-6 
                     justify-items-center grid-stack">
                 {
                     draw_path.iter().map(|x| {
                         view! {
-                            <div class="bg-gray-500 p-6 rounded-3xl w-36 sm:w-32 scale-100 hover:scale-105 duration-300 ease-out 
+                            <div class="bg-slate-200 dark:bg-slate-800 p-6 rounded-3xl w-36 sm:w-32 scale-100 hover:scale-105 duration-300 ease-out 
                                 hover:ease-in">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-white w-24 
-                                    sm:w-20 h-24 sm:h-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-black 
+                                    dark:text-white w-24 sm:w-20 h-24 sm:h-20">
                                     <path d=x.to_owned() />
                                 </svg>
                             </div>

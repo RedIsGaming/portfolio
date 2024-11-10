@@ -1,5 +1,5 @@
 use leptos::{component, view, IntoView};
-use leptos_meta::Title;
+use leptos_meta::{Meta, Title};
 
 #[component]
 pub fn UnFound() -> impl IntoView {
@@ -8,10 +8,12 @@ pub fn UnFound() -> impl IntoView {
 
     view! {
         <Title text="404 Page not found" />
+        <Meta name="robots" content="noindex, nofollow" />
+
         <section class="section-nodefault flex-col h-[44vh] text-center">
             <h1 class="text-6xl sm:text-8xl font-mono font-bold w-auto">{title}</h1>
             <br/>
-            <p class="text-lg sm:text-2xl w-auto">{description}</p>
+            <p class="text-lg sm:text-2xl w-auto font-mono">{description}</p>
         </section>
     }
 }
