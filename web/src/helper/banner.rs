@@ -8,13 +8,12 @@ pub fn Banner() -> impl IntoView {
     view! {
         <section class="relative">
             <VideoControls />
-            <article class="w-full font-mono text-white flex justify-center items-center flex-col py-32 text-center absolute 
-                inset-0">
+            <article class="section-nodefault bg-transparent dark:bg-transparent px-0 flex-col items-center absolute inset-0">
                 <img src="./assets/Red.webp" class="border-red-600 border-2 rounded-full w-28 sm:w-32 h-28 sm:h-32 flex
                     justify-center items-center bg-neutral-950" 
                     alt={title.clone()} 
                 />
-                <h1 class="text-7xl sm:text-8xl md:text-9xl font-bold w-auto pt-4">{title}</h1>
+                <h1 class="text-7xl sm:text-8xl md:text-9xl font-mono font-bold w-auto pt-4">{title}</h1>
                 <p class="text-2xl text-neutral-400">A Software Developer</p>
             </article>
         </section>

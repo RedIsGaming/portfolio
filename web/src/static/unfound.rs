@@ -8,11 +8,10 @@ pub fn UnFound() -> impl IntoView {
 
     view! {
         <Title text="404 Page not found" />
-        <section class="bg-zinc-50 dark:bg-zinc-950 w-full h-[50.5vh] font-mono text-black dark:text-white flex 
-            justify-center items-center flex-col">
-            <h1 class="text-6xl sm:text-8xl font-bold w-auto">{title}</h1>
+        <section class="section-nodefault flex-col h-[44vh] text-center">
+            <h1 class="text-6xl sm:text-8xl font-mono font-bold w-auto">{title}</h1>
             <br/>
-            <p class="text-lg sm:text-2xl font-normal w-auto">{description}</p>
+            <p class="text-lg sm:text-2xl w-auto">{description}</p>
         </section>
     }
 }

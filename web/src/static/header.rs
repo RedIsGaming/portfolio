@@ -28,11 +28,11 @@ pub fn Header() -> impl IntoView {
 
     view! {
         <nav class="bg-white dark:bg-black text-black dark:text-white w-full sm:flex sm:items-center sm:justify-between py-4 
-            sm:py-8 px-3 lg:px-16 font-semibold flex-col sm:flex-row text-center shadow-lg dark:shadow-none">
-            <article class="text-6xl font-mono w-full sm:w-auto pb-6 sm:p-0">
+            sm:py-8 px-3 lg:px-16 font-semi-bold flex-col sm:flex-row text-center shadow-lg dark:shadow-none">
+            <article class="text-6xl font-fantasy  w-full sm:w-auto pb-6 sm:p-0">
                 <A href="/" exact=header_info.match_exact>Red</A>
             </article>
-            <article class="text-xl sm:text-2xl font-mono w-full sm:w-auto text-center">
+            <article class="text-xl sm:text-2xl font-fantasy w-full sm:w-auto text-center">
             {
                 header_info.url.into_iter().zip(header_info.name).map(|(x, y)| {
                     view! {

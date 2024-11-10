@@ -1,5 +1,6 @@
 use leptos::{component, view, IntoView};
 use leptos_router::A;
+use chrono::{Datelike, Duration, Utc};
 
 struct SocialsInfo {
     d: Vec<String>,
@@ -26,11 +27,12 @@ pub fn Socials() -> impl IntoView {
         vec!["https://github.com/RedIsGaming/".to_owned(), "https://www.youtube.com/@RedIsGaming".to_owned()],
     );
 
+    let datetime = Utc::now() + Duration::hours(2);
+
     view! {
-        <section class="bg-zinc-50 dark:bg-zinc-950 w-full font-mono text-black dark:text-white flex justify-center
-            items-center flex-col pt-8 px-3 lg:px-32 text-center">
+        <section class="section-nodefault text-center">
             <article class="w-full">
-                <h2 class="text-3xl sm:text-4xl pb-6 font-semibold">{title}</h2>
+                <h3 class="heading-third pb-6">{title}</h3>
                 <article class="w-auto flex justify-center items-center gap-3">
                 {
                     socials_info.d.into_iter().zip(socials_info.url).map(|(x, y)| {
@@ -44,6 +46,9 @@ pub fn Socials() -> impl IntoView {
                         }
                     }).collect::<Vec<_>>()
                 }
+                </article>
+                <article class="pt-6">
+                    <p>"Copyright © " {datetime.year()} " Red. All Rights Reserved."</p>
                 </article>
             </article>
         </section>

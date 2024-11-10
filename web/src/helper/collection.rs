@@ -37,9 +37,8 @@ pub fn Collection() -> impl IntoView {
     let title = String::from("Know more").to_uppercase();
 
     view! {
-        <section class="bg-white dark:bg-black w-full font-mono text-black dark:text-white flex justify-center
-            items-center flex-col py-16 px-3 lg:px-32 text-center">
-            <h2 class="text-5xl sm:text-6xl font-bold pb-10">{title}</h2>
+        <section class="section-nodefault flex-col text-center">
+            <h2 class="heading-first pb-10">{title}</h2>
             <article class="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-6 content-center">
             {
                 collection_info.d.iter().zip(collection_info.title).zip(collection_info.description).map(|((a, b), c)| {
@@ -51,10 +50,10 @@ pub fn Collection() -> impl IntoView {
                                 fill-current text-black dark:text-white">
                                 <path d=a />
                             </svg>
-                            <h3 class="text-4xl pt-6 font-semibold">{b.to_uppercase()}</h3>
+                            <h3 class="heading-third pt-6">{b.to_uppercase()}</h3>
                             <p class="py-8 text-xl text-neutral-600 dark:text-neutral-400">{c}</p>
                             <A href=url exact=collection_info.match_exact>
-                                <button class="bg-red-600 w-full h-14 rounded-2xl text-3xl font-semibold text-white scale-100 
+                                <button class="bg-red-600 w-full h-14 rounded-2xl text-3xl text-white scale-100 
                                     hover:scale-105 duration-300 ease-out hover:ease-in">
                                     Read more
                                 </button>
