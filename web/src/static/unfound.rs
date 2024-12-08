@@ -7,7 +7,7 @@ pub fn UnFound() -> impl IntoView {
     let description = String::from("The page couldn't be found.").to_uppercase();
 
     view! {
-        <Title text="404 Page not found" />
+        <Title text="404 - Page not found" />
         <Meta name="robots" content="noindex, nofollow" />
 
         <section class="section-nodefault flex-col h-[44vh] text-center">

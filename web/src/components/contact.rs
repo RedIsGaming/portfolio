@@ -5,7 +5,7 @@ use leptos_router::A;
 #[component]
 fn ContactSEO() -> impl IntoView {
     view! {
-        <Title text="Contact Red" />
+        <Title text="Red - Contact" />
         <Meta 
             name="description"
             content="Red like to talk about technology, stacks, programming languages and so much more. Click here to contact him" 
@@ -25,14 +25,14 @@ pub fn Contact() -> impl IntoView {
         <section class="section-nodefault">
             <article class="w-full lg:w-9/12">
                 <h1 class="text-5xl sm:text-6xl font-mono font-bold text-center">{"Contact".to_uppercase()}</h1>
-                <article class="bg-gray-400 dark:bg-gray-600 mt-6 p-10 sm:py-20 rounded-3xl flex flex-col sm:flex-row 
+                <article class="bg-slate-200 dark:bg-slate-800 mt-6 p-10 sm:py-20 rounded-3xl flex flex-col sm:flex-row 
                     ">
                     <div class="w-full sm:w-3/4">
                         <h2 class="text-4xl sm:text-5xl font-mono font-semibold">{"Contact Info".to_uppercase()}</h2>
-                        <p class="mt-6 mb-3 font-mono text-neutral-300 text-xl">
+                        <p class="mt-6 mb-3 font-mono text-neutral-700 dark:text-neutral-300 text-xl">
                             "We can talk about anything. stacks, programming languages, technology and more. You can reach out to me 
                             by sending me "
-                            <A href="mailto:j.hofman-1@student.hhs.nl" class="text-blue-300">an email</A>.
+                            <A href="mailto:j.hofman-1@student.hhs.nl" class="text-red-600">an email</A>.
                         </p>
                         <div class="w-12 duration-300 scale-100 hover:scale-110 ease-out hover:ease-in">
                             <A href="mailto:j.hofman-1@student.hhs.nl">

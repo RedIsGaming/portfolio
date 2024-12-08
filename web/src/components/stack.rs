@@ -4,7 +4,7 @@ use leptos_meta::{Meta, Title};
 #[component]
 fn StackSEO() -> impl IntoView {
     view! {
-        <Title text="Red Stack" />
+        <Title text="Red - Stack" />
         <Meta 
             name="description"
             content="Red loves to work with different kind of stacks. To check more about Red's stacks, you can check this page." 

@@ -55,7 +55,7 @@ pub fn Collection() -> impl IntoView {
                             <A href=url exact=collection_info.match_exact>
                                 <button class="bg-red-600 w-full h-14 rounded-2xl text-3xl text-white scale-100 
                                     hover:scale-105 duration-300 ease-out hover:ease-in">
-                                    Read more
+                                    Watch more
                                 </button>
                             </A>
                         </article>

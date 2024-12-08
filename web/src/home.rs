@@ -5,7 +5,7 @@ use leptos_meta::{Meta, Title};
 #[component]
 fn HomeSEO() -> impl IntoView {
     view! {
-        <Title text="Red Homepage" />
+        <Title text="Red - Homepage" />
         <Meta 
             name="description"
             content="Red is a passionate software developer with heart for technology and language stacks that follow conventions" 
